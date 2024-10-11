@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="main.css">
+   <script src="main.js"></script>
+</head>
+<body>
+    <h1> Mortgage Calculator</h1>
+    <fieldset class="filed">
+    <label for="pLoanAmount"> Loan amount </label><br>
+    <input type="number" id="pLoanAmount" value="53"> <br><br>
+
+    <label for="annualInterestRate"> Interest rate </label> <br>
+    <input type="number" id="annualInterestRate" value="7.625"> <br><br>
+
+    <label for="numberOfYears"> Loan term</label> <br>
+    <input type="number" id="numberOfYears" value="15"><br><br>
+
+    <button id="calculatePayment"> Calculate </button> <br><br>
+
+ Monthly payment amount: <br> $<input type="text" id="paymentAmount"  value="???" readonly>
+    </fieldset>
+   
+</body>
+<script> 
+    function onClick() {
+        const loanAmount = pLoanAmount.value;
+        const interestRate = annualInterestRate.value;
+        const loanTermInYears = numberOfYears.value
+        const p = calculate(loanAmount, interestRate, loanTermInYears);
+        paymentAmount.value = p.toFixed(2)
+    }
+   calculatePayment.addEventListener("click", onClick)
+</script>
+</html>

@@ -1,0 +1,21 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #ddd;
+}
+.btn-calc{
+    background-color: darkgrey;
+    margin: 0.5rem;
+    color: black;
+    font-size: large;
+}
+
+#calculatePayment{
+    background-color: dodgerblue;
+    margin: auto;
+}
+.filed{
+    width: 400px;
+    background-color: white;
+    margin-left: 16rem;
+}
